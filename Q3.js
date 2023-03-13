@@ -23,9 +23,3 @@ function proper(str) {
     return result;
 }
 console.log(proper(p_name1));
-let arr = ["aoun", "malik"];
-let res = arr.map((value) => {
-    let vss = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
-    return vss;
-});
-console.log(res);
