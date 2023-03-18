@@ -12,9 +12,6 @@ of arguments each time.
  */
 let sandwich = (...item) => {
     console.log(`you orderd with ${item}`);
-    // for(let x of item){
-    //     console.log(`ordery items in your sendwish are : ${x}`);
-    // }
 };
 sandwich("bread", "ham", "cheese");
 sandwich("bread", "turkey", "lettuce", "tomato", "mayo");

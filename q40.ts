@@ -15,7 +15,7 @@ function call that includes the number of tracks on an album.
  * 
  */
 
-let make_album=(artist_name:string,album_title:string,number_track:Number):{artist:String,album:String,track:Number}=>{
+let make_album=(artist_name:string,album_title:string,number_track:Number):object=>{
     let music_album ={
         artist: artist_name,
         album: album_title,
