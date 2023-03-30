@@ -15,9 +15,9 @@ stored correctly.
 
 
 
-let car_info=(name_car:string,name_manufacture:string,...optional:[string:any][]):object=>{
+let car_info=(name_car:string,name_manufacture:string,...optional:[string,any][]):object=>{
 
-    
+        
     
 
 
@@ -25,9 +25,17 @@ let car_info=(name_car:string,name_manufacture:string,...optional:[string:any][]
     let car:any={
         name:name_car,
         manufacture:name_manufacture,
+        
+
 
         
     };
+
+    optional.forEach((option:[string, any])=>{
+        
+        car[option[0]]=option[1];
+
+    });
 
     
     
@@ -38,9 +46,6 @@ let car_info=(name_car:string,name_manufacture:string,...optional:[string:any][]
 
 }
 
-
-
-
-
-console.log(car_info("MARK X","Totouta"));
+let retcar = car_info("Civic","Honda",["color","red"],["wheel",4]);
+console.log(retcar);
 
